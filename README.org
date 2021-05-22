@@ -18,7 +18,7 @@
 * Configuration
 - =clojure-rand-ref-cache-file=
   - To avoid the needless re-fetching of https://clojuredocs.org/quickref every time, a cache is used. This variable controls the cache file path.
-  - Defaults to ="/tmp/clojure-quickref-dom.el"=
+  - Defaults to =/tmp/clojure-quickref-dom.el=
 
 * TODOs
 - Add Installation instructions
