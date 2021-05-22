@@ -1,0 +1,26 @@
+#+TITLE: README
+
+* Usage
+#+begin_src elisp
+  (clojure-rand-ref (lambda (entry)
+                      (message (pp entry))))
+
+  ;; Sample printed result
+  (:symbol "conj"
+   :link "https://clojuredocs.org/clojure.core/conj"
+   :description "conj[oin]. Returns a new collection with the xs
+        'added'. (conj nil item) returns (item).  The 'addition' m")
+#+end_src
+
+* Requirements
+- =dash.el=
+
+* Configuration
+- =clojure-rand-ref-cache-file=
+  - To avoid the needless re-fetching of https://clojuredocs.org/quickref every time, a cache is used. This variable controls the cache file path.
+  - Defaults to ="/tmp/clojure-quickref-dom.el"=
+
+* TODOs
+- Add Installation instructions
+- Re-fetch the quickref page every X minutes instead of just fetching it once initially.
+- Show examples for where =clojure-rand-ref= can be used.
