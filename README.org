@@ -8,8 +8,7 @@
   ;; Sample printed result
   (:symbol "conj"
    :link "https://clojuredocs.org/clojure.core/conj"
-   :description "conj[oin]. Returns a new collection with the xs
-        'added'. (conj nil item) returns (item).  The 'addition' m")
+   :description "conj[oin]. Returns a new collection with the xs 'added'. (conj nil item) returns (item).  The 'addition' m")
 #+end_src
 
 * Requirements
