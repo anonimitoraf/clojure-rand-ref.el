@@ -81,7 +81,8 @@ output as a string."
                         (list :symbol (plist-get value :symbol)
                               :link (concat clojure-rand-ref--base-url
                                             (plist-get value :link))
-                              :description desc)))
+                              ;; Some descriptions are abruptly cut off
+                              :description (concat desc "..."))))
               (dom-by-class dom "dl-row")))))
 
 (defun clojure-rand-ref--rand-elem (l)
