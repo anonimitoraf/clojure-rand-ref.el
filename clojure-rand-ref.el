@@ -90,6 +90,7 @@ output as a string."
   (let ((idx (random (length l))))
     (nth idx l)))
 
+;;;###autoload
 (defun clojure-rand-ref (callback)
   "Invokes CALLBACK with a random item from https://clojuredocs.org/quickref."
   (if (file-exists-p clojure-rand-ref-cache-file)
